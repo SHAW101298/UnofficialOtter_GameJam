@@ -65,7 +65,7 @@ public class PlayerUIController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Tab))
         {
             UpdateStatsFields();
-            statsWindow.SetActive(true);
+            statsWindow.SetActive(!statsWindow.activeSelf);
         }
     }
 
@@ -87,7 +87,7 @@ public class PlayerUIController : MonoBehaviour
         helpWindow.SetActive(true);
     }
 
-    void UpdateStatsFields()
+    public void UpdateStatsFields()
     {
         healthField.text = player.stats.maxHealth.ToString();
         shieldField.text = player.stats.maxShield.ToString();

@@ -11,5 +11,6 @@ public class RewardShield : Reward_Base
         PlayerStats stats = PlayerController.ins.stats;
         stats.shield += shieldAmount;
         stats.maxShield += shieldAmount;
+        UpdateChanges();
     }
 }

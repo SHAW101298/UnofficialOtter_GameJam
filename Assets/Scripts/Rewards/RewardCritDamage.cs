@@ -10,5 +10,6 @@ public class RewardCritDamage : Reward_Base
     {
         PlayerStats stats = PlayerController.ins.stats;
         stats.critDamage += critDamageAmount;
+        UpdateChanges();
     }
 }

@@ -9,4 +9,9 @@ public abstract class Reward_Base : ScriptableObject
     public string rewardName;
     public string rewardDescription;
     public abstract void ApplyReward();
+    protected void UpdateChanges()
+    {
+        PlayerController player = PlayerController.ins;
+        player.ui.UpdateStatsFields();
+    }
 }

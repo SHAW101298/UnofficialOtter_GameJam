@@ -10,5 +10,6 @@ public class RewardDamage : Reward_Base
     {
         PlayerStats stats = PlayerController.ins.stats;
         stats.damage += damageAmount;
+        UpdateChanges();
     }
 }

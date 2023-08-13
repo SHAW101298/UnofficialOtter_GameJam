@@ -9,5 +9,6 @@ public class RewardMoveSpeed : Reward_Base
     public override void ApplyReward()
     {
         PlayerController.ins.moveSpeed += moveSpeedAmount;
+        UpdateChanges();
     }
 }

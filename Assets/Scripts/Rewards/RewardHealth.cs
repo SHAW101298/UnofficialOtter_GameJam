@@ -11,5 +11,6 @@ public class RewardHealth : Reward_Base
         PlayerStats stats = PlayerController.ins.stats;
         stats.health += healthAmount;
         stats.maxHealth += healthAmount;
+        UpdateChanges();
     }
 }

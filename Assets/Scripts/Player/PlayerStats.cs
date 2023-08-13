@@ -85,12 +85,27 @@ public class PlayerStats : MonoBehaviour
     {
         float dmg = damage;
 
-        int rand = Random.Range(0, 100);
-        if (rand <= critChance)
+        if(critChance > 100)
         {
             dmg *= critDamage;
+            int rand = Random.Range(100, 200);
+            if (rand <= critChance)
+            {
+                dmg *= critDamage;
+            }
+            return dmg;
         }
-        return dmg;
+        else
+        {
+            int rand = Random.Range(0, 100);
+            if (rand <= critChance)
+            {
+                dmg *= critDamage;
+            }
+            return dmg;
+        }
+
+        
     }
     void ShieldRegeneration()
     {

@@ -35696,7 +35696,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Critical Damage %
+  m_Text: Critical Damage x
 --- !u!222 &2028043780
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -37345,3 +37345,10 @@ MonoBehaviour:
   pauseWindow: {fileID: 2102373703}
   optionsWindow: {fileID: 1271608812}
   helpWindow: {fileID: 1374986884}
+  statsWindow: {fileID: 917269342}
+  healthField: {fileID: 1966893456}
+  shieldField: {fileID: 832701768}
+  damageField: {fileID: 1172412715}
+  critChanceField: {fileID: 2047916491}
+  critDamageField: {fileID: 255949469}
+  moveSpeedField: {fileID: 1626096625}

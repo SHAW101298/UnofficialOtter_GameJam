@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: MoveSpeed
   m_EditorClassIdentifier: 
   rewardName: 
-  rewardDescription: Provides additional 5 move speed
+  rewardDescription: Provides additional 0.5 move speed
   moveSpeedAmount: 0.5
